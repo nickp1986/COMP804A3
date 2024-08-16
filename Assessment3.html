@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .task-one-container {
+            width: 500px;
+            border: 3px dashed #1b3a61;
+            background-color: #e6f2ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .task-one-container h1, .task-one-container h2, .task-one-container h3 {
+            color: #1b3a61;
+            margin: 10px 0;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+        }
+
+        .task-2-table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 4px inset #8B0000;
+        }
+
+        .task-2-table th, .task-2-table td {
+            border: 2px inset #8B0000;
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+            font-family: 'Arial', sans-serif;
+            color: #2F4F4F;
+        }
+
+        .task-2-table th {
+            background-color: #8B0000;
+            color: #ffffff;
+            font-size: 1.2em;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .task-2-table tr:nth-child(odd) td {
+            background-color: #f2f2f2;
+            color: #0000FF;
+        }
+
+        .task-2-table tr:nth-child(even) td {
+            background-color: #ffffff;
+            font-family: 'Papyrus', serif;
+            color: #800080;
+        }
+
+        .task-3-table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #1b3a61;
+        }
+
+        .task-3-table th, .task-3-table td {
+            border: 1px solid #4682B4;
+            padding: 15px;
+            text-align: left;
+            vertical-align: top;
+            font-family: 'Arial', sans-serif;
+            color: #1b3a61;
+        }
+
+        .task-3-table th {
+            background-color: #1b3a61;
+            color: #ffffff;
+            font-size: 1.2em;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .task-3-table tr:nth-child(odd) td {
+            background-color: #e6f2ff;
+            color: #1b3a61;
+        }
+
+        .task-3-table tr:nth-child(even) td {
+            background-color: #ffffff;
+            color: #006400;
+        }
+
+        .task-3-table tr:hover td {
+            background-color: #FFC0CB;
+            transition: background-color 0.3s ease;
+        }
+
+        a {
+            color: #00796b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+       .container {
+            width: 60%;
+            text-align: center;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px 10px 0;
+            cursor: pointer;
+            border: 2px solid #1b3a61;
+            background-color: #ffffff;
+            color: #1b3a61;
+        }
+
+        button.active {
+            background-color: #1b3a61;
+            color: #ffffff;
+        }
+
+        .text-field {
+            display: block;
+            margin: 10px auto;
+            font-size: 16px;
+            border: 2px solid #1b3a61;
+            padding: 5px;
+            width: 10%;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #00796b;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Task 1</h2>
+    <div class="task-one-container">
+        <h1>8850446 Nicholas Petersen</h1>
+        <h2>COMP804: Web Security</h2>
+        <h3>Assignment 3, due at the end of Week 5</h3>
+    </div>
+
+    <h2>Task 2</h2>
+    <h1 style="text-align: center; color: #1b3a61;">Key Dates - University of Wollongong</h1>
+    <table class="task-2-table">
+        <tr>
+            <th>Activity</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>First day to enrol for re-enrolling (continuing students)</td>
+            <td>21 Nov 2022</td>
+        </tr>
+        <tr>
+            <td>Orientation</td>
+            <td>18 Jul 2023</td>
+        </tr>
+        <tr>
+            <td>Lectures Commence (weeks 1-9)</td>
+            <td>24 Jul - 22 Sep 2023</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol/add subjects yourself</td>
+            <td>04 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol/add subjects with Head of Students approval</td>
+            <td>11 Aug 2023</td>
+        </tr>
+        <tr class="census-row">
+            <td>CENSUS DATE
+                <ul>
+                    <li>Fees due</li>
+                    <li>Last day to withdraw from subject/s without paying for them</li>
+                    <li>HECS/FEE HELP debt reporting date</li>
+                    <li>Last day to change HECS/FEE HELP billing option</li>
+                </ul>
+                <a href="https://www.uow.edu.au/student/dates/#d.en.186577">Learn more about Census Date ></a>
+            </td>
+            <td>31 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>Student Services and Amenities Fees Due</td>
+            <td>01 Sep 2023</td>
+        </tr>
+    </table>
+
+    <h2>Task 3</h2>
+    <h1 style="text-align: center; color: #1b3a61;">Ten Types of Web Attacks</h1>
+    <table class="task-3-table">
+        <tr>
+            <th style="width: 30%;">Name</th>
+            <th style="width: 70%;">Web Attacks</th>
+        </tr>
+        <tr>
+            <td style="width: 30%;">
+                <div>SQL Injection</div>
+                <img src="sql-injection.png" alt="SQL Injection Image" style="width: 50%;">
+            </td>
+            <td style="width: 70%;">
+                SQL Injection attacks occur when attackers insert malicious SQL queries into input fields, enabling unauthorized access to the database. This can lead to data breaches, data loss, and full control over the affected system. It exploits vulnerabilities in web applications where user inputs are not properly sanitized, allowing attackers to execute arbitrary SQL code on the server.
+                <br><br>
+                <span class="attack-description">Image and Information Source:</span>
+                <a href="https://suventechnology.blogspot.com/2017/06/what-are-injection-attacks-sql.html">Suvan Technology</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 30%;">
+                <div>Cross-Site Scripting (XSS)</div>
+                <img src="xss.png" alt="XSS Image" style="width: 50%;">
+            </td>
+            <td style="width: 70%;">
+                Cross-Site Scripting (XSS) attacks involve injecting malicious scripts into web pages viewed by users. These scripts can steal cookies, session tokens, or other sensitive information, posing significant security risks. XSS attacks can occur when web applications accept and return user input without validating or encoding it, leading to the execution of the malicious script in the user's browser.
+                <br><br>
+                <span class="attack-description">Image and Information Source:</span>
+                <a href="https://www.cloudflare.com/learning/security/threats/cross-site-scripting/">Cloudflare</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 30%;">
+                <div>Cross-Site Request Forgery (CSRF)</div>
+                <img src="csrf.png" alt="CSRF Image" style="width: 50%;">
+            </td>
+            <td style="width: 70%;">
+                CSRF attacks trick users into performing unwanted actions on a web application where they are authenticated. This can lead to unauthorized transactions, data changes, or privilege escalation. CSRF exploits the trust a web application has in the user’s browser, allowing the attacker to gain control over the actions taken on behalf of the victim.
+                <br><br>
+                <span class="attack-description">Image and Information Source:</span>
+                <a href="https://www.okta.com/identity-101/csrf-attack/">Okta</a>
+            </td>
+        </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>Denial of Service Attack (DoS)</div>
+            <img src="dos.png" alt="DoS Image" style="width: 50%;">
+        </td>
+        <td style="width: 70%;">
+            Denial of Service (DoS) attacks aim to make a web service unavailable by overwhelming it with traffic. This can cause significant disruptions, preventing legitimate users from accessing the service. DoS attacks are often executed by flooding the target with superfluous requests, leading to resource exhaustion and downtime.
+<br><br>
+            <span class="attack-description">Image and Information Source:</span>
+            <a href="https://linuxtips.in/what-is-denial-of-service-attacks-and-prevent-it/">Linux Tips</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>Man in the Middle (MitM)</div>
+            <img src="mitm.png" alt="MitM Image" style="width: 50%;">
+        </td>
+        <td style="width: 70%;">
+            A man-in-the-middle (MITM) attack is a form of cyberattack in which criminals exploiting weak web-based protocols insert themselves between entities in a communication channel to steal data. None of the parties sending email, texting, or chatting on a video call are aware that an attacker has inserted their presence into the conversation and that the attacker is stealing their data. While most cyberattacks are silent and carried out without the victims' knowledge, some MITM attacks are the opposite. They might include a bot generating believable text messages, impersonating a person's voice on a call, or spoofing an entire communications system to scrape data the attacker thinks is important from participants' devices.
+<br><br>
+            <span class="attack-description">Information Source:</span>
+            <a href="https://www.fortinet.com/resources/cyberglossary/man-in-the-middle-attack">FORTINET</a>
+	    <span class="attack-description">Image Source:</span>
+            <a href="https://sectigostore.com/blog/10-different-types-of-cyber-attacks-how-they-work/">Sectigo Stores</a>       
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>Phishing</div>
+            <img src="phishing.png" alt="Phishing Image" style="width: 50%;">
+        </td>
+        <td style="width: 70%;">
+            Phishing attacks trick users into providing sensitive information, such as login credentials or credit card numbers, by masquerading as a legitimate entity. These attacks often occur through deceptive emails or websites designed to look like a trusted source. Phishing is a widespread form of social engineering that can lead to identity theft, financial loss, and other security breaches.
+<br><br>
+            <span class="attack-description">Image and Information Source:</span>
+            <a href="https://www.digitaldefense.com/blog/phishing-attacks-what-is-phishing/">Digital Defense</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>Ransomware</div>
+            <img src="ransomware.png" alt="Ransomware Image" style="width: 50%;">
+        </td>
+        <td style="width: 70%;">
+            Ransomware is a type of malware that encrypts a victim's files, demanding a ransom for their decryption. It often spreads through phishing emails or by exploiting software vulnerabilities. Ransomware attacks can have devastating effects on individuals and organizations, leading to significant financial losses and operational disruptions if the ransom is not paid.
+<br><br>
+            <span class="attack-description">Image and Information Source:</span>
+            <a href="https://www.klogixsecurity.com/blog/introduction-to-ransomware">K logix Security</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>Buffer Overflow</div>
+            <img src="buffer-overflow.png" alt="Buffer Overflow Image" style="width: 50%;">
+        </td>
+        <td style="width: 70%;">
+            Buffer Overflow attacks occur when more data is written to a memory buffer than it can hold, leading to data corruption or the execution of arbitrary code. This type of vulnerability can be exploited to gain unauthorized access to systems or to crash the affected application. Buffer overflows are common in applications written in languages like C or C++ that do not perform bounds checking.
+<br><br>
+            <span class="attack-description">Image and Information Source:</span>
+            <a href="https://avinetworks.com/glossary/buffer-overflow/">Avi Networks</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>JSON Injection</div>
+            <img src="json-injection.jpg" alt="JSON Injection Image" style="width: 50%;">      
+        </td>
+        <td style="width: 70%;">
+            JSON Injection occurs when attackers inject malicious JSON objects into an application, altering its behavior or exploiting vulnerabilities. This attack can lead to unauthorized data access, data modification, or denial of service. JSON Injection typically targets web applications that use JSON for data exchange without proper input validation.
+<br><br>
+            <span class="attack-description">Image and Information Source:</span>
+            <a href="https://www.comparitech.com/net-admin/json-injection-guide/">Comparitech</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 30%;">
+            <div>Brute Force Attack</div>
+            <img src="brute-force.png" alt="Brute Force Attack Image" style="width: 50%;">
+        </td>
+        <td style="width: 70%;">
+            Brute Force Attacks involve systematically trying all possible combinations of passwords until the correct one is found. These attacks can compromise accounts, leading to unauthorized access to sensitive data. Brute Force attacks are often used in conjunction with other techniques, such as credential stuffing, to maximize their effectiveness.
+<br><br>
+            <span class="attack-description">Image and Information Source:</span>
+            <a href="https://www.thesslstore.com/blog/brute-force-attack-definition-how-brute-force-works/">The SSL Store</a>
+        </td>
+    </tr>
+</table>
+
+    <br><br>
+    <h2>Task 4</h2>
+    <h1 style="text-align: center; color: #1b3a61;">Mythical Creatures</h1>
+        <div class="button-container">
+
+            <button id="dragonBtn" onclick="displayCreature('Dragon')">Dragon</button>
+            <button id="phoenixBtn" onclick="displayCreature('Phoenix')">Phoenix</button>
+            <button id="gryphonBtn" onclick="displayCreature('Gryphon')">Gryphon</button>
+        </div>
+        <input type="text" class="text-field" id="creatureText" readonly>
+        <div class="message" id="creatureMessage"></div>
+        <div class="image-container">
+            <img src="dragon.jpg" id="dragonImage" alt="Dragon">
+            <img src="phoenix.jpg" id="phoenixImage" alt="Phoenix">
+            <img src="gryphon.jpg" id="gryphonImage" alt="Gryphon">
+        </div>
+    </div>
+
+    <script>
+        function displayCreature(creature) {
+
+            document.getElementById("dragonBtn").classList.remove("active");
+            document.getElementById("phoenixBtn").classList.remove("active");
+            document.getElementById("gryphonBtn").classList.remove("active");
+
+            document.getElementById("dragonImage").style.display = "none";
+            document.getElementById("phoenixImage").style.display = "none";
+            document.getElementById("gryphonImage").style.display = "none";
+
+            document.getElementById(creature.toLowerCase() + "Btn").classList.add("active");
+
+            document.getElementById("creatureText").value = "User clicks " + creature;
+            document.getElementById("creatureMessage").innerText = creature + " is clicked";
+
+
+            document.getElementById(creature.toLowerCase() + "Image").style.display = "block";
+        }
+    </script>
+
+    <h3>The above images: dragon.jpg, phoenix.jpg, and gryphon.jpg were generated by the author using chatGPT.</h3>
+</body>
+</html>
